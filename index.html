@@ -15,7 +15,6 @@
         }
 
         body {
-            /* Background using the dark royal blue tone */
             background: linear-gradient(135deg, #0a0885 0%, #100cce 100%);
             color: #333;
             height: 100vh;
@@ -24,7 +23,7 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            padding: 8px;
+            padding: 6px;
             position: relative;
         }
 
@@ -47,22 +46,20 @@
             opacity: 0.35;
         }
 
-        /* Flower Shape using CSS */
         .flower {
-            width: 16px;
-            height: 16px;
-            background: radial-gradient(circle, #ffffff 40%, #4ade80 40%);
-            border-radius: 50%;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-        }
-
-        /* Diamond Shape using CSS */
-        .diamond {
             width: 14px;
             height: 14px;
+            background: radial-gradient(circle, #ffffff 40%, #4ade80 40%);
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+        }
+
+        .diamond {
+            width: 12px;
+            height: 12px;
             background: linear-gradient(135deg, #a7f3d0, #38bdf8);
             transform: rotate(45deg);
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+            box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
         }
 
         @keyframes fall {
@@ -82,28 +79,27 @@
             }
         }
 
-        /* Fully Responsive Non-Scrolling Container changed to Dark Green */
+        /* Fully Responsive Container fitted to screen without scrolling */
         .bio-container {
             width: 100%;
-            max-width: 420px;
+            max-width: 380px;
             max-height: 98vh;
             background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
             border: 1px solid rgba(74, 222, 128, 0.3);
             border-radius: 14px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            padding: 12px 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            padding: 10px 14px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             z-index: 1;
-            margin: auto;
         }
 
         /* Profile Circle */
         .profile-circle {
-            width: 55px;
-            height: 55px;
+            width: 52px;
+            height: 52px;
             border-radius: 50%;
             border: 2px solid #4ade80;
             display: flex;
@@ -112,7 +108,7 @@
             background: #065f46;
             margin-bottom: 4px;
             overflow: hidden;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         }
 
         .profile-circle img {
@@ -122,15 +118,15 @@
         }
 
         .brand-title {
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-weight: 700;
             color: #4ade80;
-            margin-bottom: 2px;
+            margin-bottom: 1px;
             text-align: center;
         }
 
         .brand-subtitle {
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             color: #a7f3d0;
             margin-bottom: 8px;
             text-align: center;
@@ -141,8 +137,8 @@
             display: flex;
             gap: 12px;
             background: rgba(6, 78, 59, 0.6);
-            padding: 6px 14px;
-            border-radius: 20px;
+            padding: 5px 14px;
+            border-radius: 16px;
             margin-bottom: 8px;
             border: 1px solid rgba(74, 222, 128, 0.3);
         }
@@ -157,21 +153,24 @@
             transform: scale(1.2);
         }
 
-        /* Links Box Wrapper with Blue Blurred Background & White Text */
+        /* Links Box Wrapper resized to fit snugly around the action buttons */
         .links-card-wrapper {
-            width: 100%;
+            width: fit-content;
+            max-width: 100%;
             background: rgba(16, 12, 206, 0.25);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 10px;
-            padding: 8px;
+            padding: 8px 10px;
             display: flex;
             flex-direction: column;
             gap: 6px;
+            align-items: stretch;
+            margin: 0 auto;
         }
 
-        /* Action Buttons with Left Text Alignment & Spacing */
+        /* Action Buttons with left-aligned text and icons */
         .bio-btn {
             width: 100%;
             padding: 7px 12px;
@@ -180,7 +179,7 @@
             -webkit-backdrop-filter: blur(5px);
             color: #ffffff;
             border: 2px solid rgba(255, 255, 255, 0.6);
-            border-radius: 8px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.8rem;
@@ -190,7 +189,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            gap: 12px;
+            gap: 10px;
+            white-space: nowrap;
         }
 
         .bio-btn:hover {
@@ -204,7 +204,7 @@
         .bio-btn i {
             font-size: 0.85rem;
             color: #ffffff;
-            min-width: 18px;
+            min-width: 16px;
             text-align: center;
         }
 
@@ -212,17 +212,17 @@
             color: #0a0885;
         }
 
-        /* Footer Branding Styles with Dark Grey & Green Background */
+        /* Footer Branding Styles */
         .site-footer {
             margin-top: 6px;
             text-align: center;
-            font-size: 0.68rem;
+            font-size: 0.65rem;
             width: 100%;
             border-radius: 6px;
-            padding: 6px 8px;
+            padding: 6px;
             background: linear-gradient(135deg, #1f2421 0%, #2b332d 100%);
             border: 1px solid #3a443d;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
         }
 
         .site-footer .footer-brand {
